@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8" />
+  <title>Survey Office Kavrepalanchowk</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <!-- styles -->
+  <link rel="icon" href="images/logo.jpg" type="image/ico">
+  <link rel="stylesheet" href="http://owsgip.itc.utwente.nl/base/ExtJS/resources/css/ext-all.css"/>
+  <link rel="stylesheet" href="http://owsgip.itc.utwente.nl/base/GeoExt/resources/css/geoext-all.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  
+  <!-- ExtJS libraries -->
+  <script src="http://owsgip.itc.utwente.nl/base/ExtJS/adapter/ext/ext-base.js"></script>
+  <script src="http://owsgip.itc.utwente.nl/base/ExtJS/ext-all.js"></script>
+ 
+  <!-- Geo Scripts -->
+  <script src="http://owsgip.itc.utwente.nl/base/OpenLayers/OpenLayers.js"></script>
+  <script src="http://owsgip.itc.utwente.nl/base/GeoExt/lib/GeoExt.js"></script>
+  
+  <!-- the control script -->
+  <script src="scripts/control.js"></script>
+</head>
+   <header id="banner" class="bodygroup">
+    <figure><img src="images/flag.gif" alt="Nepal Flag" width="90" height="80" /></figure>
+	<figure2><img src="images/logo.jpg" alt="Nepal Logo" width="90" height="90" /></figure2>
+	
+    <h1><a href="#">Survey Office Kavre <strong>Dhulikhel, Kavrepalanchowk</strong></a></h1>
+    <nav><ul>
+      <li id="home-li"  ><a href="#" onclick="switchDivs('home-'); return false;">Home</a></li>
+	  <li id="download-li" ><a href="#" onclick="switchDivs('download-'); return false;">Download</a></li>
+	
+	  <li id="location-li" class="active"><a href="#" onclick="switchDivs('location-'); return false;">Map</a></li>
+      <li id="contact-li"><a href="#" onclick="switchDivs('contact-'); return false;">Contact</a></li>
+	  
+    </ul></nav>
+  </header>
+<div id="home-div" class='hidediv'>
+<section id="first" class="bodygroup">
+<hgroup>
+<h2>About Us</h2>
+<h4>Survey Office Kavrepalanchowk is located at Dhulikhel which is about 30 km southeast from the capital
+  Kathmandu. It is only one office that oversees the whole process of parcel fragmentation process in Kavrepalanchowk
+  District which covers an area of 1396 sq km. It provides other services too like the computer prints of parcel maps,
+  copy of field books , copy of plot register,etc.<h4>
+</hgroup>
+</section>
+<section id="first" class="bodygroup">
+<hgroup>
+<h2>Home</h2>
+</hgroup>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade block">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/nepal_admin.jpg" style="width:100%">
+    <div class="text">Nepal Administrative Boundary</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/nepal_province.jpg" style="width:100%">
+    <div class="text">Nepal Provinces Boundary</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/nepal_districts.jpg" style="width:100%">
+    <div class="text">Nepal Districts Boundary</div>
+  </div>
+  <!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </section>
+</div>
+
+
+</div>
+  <div id="contact-div" class="hidediv">
+  <section id="first" class="bodygroup">
+  <hgroup>
+  <h2>Contact</h2>
+  <h3>Survey Office Kavrepalanchowk</h3>
+  <h5>Dhulikhel,Kavre</h5>
+  <p></p>
+  <p></p>
+  <h4>Phone:011490287 <br>Email: kavrepalanchok@dos.gov.np<br>Fax:011490287
+  </h4>
+  </hgroup>
+  </section>
+  
+  </div>
+  
+  
+  <div id="download-div" class="hidediv">
+  <section id="first" class="bodygroup">
+  <hgroup>
+  <h2>Downloads</h2>
+  <h3>Land Use Act, 2076</h3>
+  <p>
+  <a href="files/Landuse_Act_2076.pdf" download>Download</a>
+  </p>
+  <h3>Regarding the area of conflict damaged by the conflict and the rehabilitation guide 2071</h3>
+  <p>
+  <a href="files/Regarding_the_area_of_conflict_damaged_by_the_conflict_and_the_rehabilitation_guide_2071.pdf" download>Download</a>
+  </p>
+  <h3>Digital data distribution, use, and regulatory directives, 206 9</h3>
+  <p>
+  <a href="files/Digital-Data2.pdf" download>Download</a>
+  </p>
+  </hgroup>
+  </section>
+  </div>
+  <div id="location-div">
+  <section id="first" class="bodygroup">
+    <hgroup>
+      <h2>Map of Nepal</h2>
+    </hgroup>
+    <article>
+      <div id="viewer-panel"></div>
+    </article>
+  </section>
+  </div>
+  
+  
+  <footer class="bodygroup">
+    <p>Survey Office Kavrepalanchowk<br><a href="http://dos.gov.np">Survey Department of Nepal</a></p>
+  </footer>
+<body>
+  <!-- here goes the content of the page -->
+</body>
+ 
+</html>
